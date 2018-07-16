@@ -1,0 +1,667 @@
+<html>
+    <head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }    
+        #box1{
+            height: 100vh;
+            width: 100%;
+            background-image: url("bg/i3.jpg");
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+	
+		.wrapper3{
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.container-jom .profile-img{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			position:relative;
+			margin-top:50px;
+			border: 5px solid white;
+		}
+		.down{
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+        #box2{
+            height: 100vh;
+            width: 100%;
+            background-image: url("bg/i1.jpg");
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+        #box3{
+            height: 100vh;
+            width: 100%;
+            background-image: url(back1.png);
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+        h1{
+            font-family: arial black;
+            font-size: 50px;
+            color:white;
+            margin: 0px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .container-fluid2 {
+			padding: 30px 20px;
+		}
+		.bg-grey3 {
+			background-image:url("bg/i1.jpg");
+			background-size:cover;
+			height: 100vh;
+			width: 100%;
+			display: table;
+			background-attachment: fixed;
+			font-family: Helvetica, sans-serif;	
+		}
+
+        section
+		{
+			padding: 15px 0;
+		}
+#a1
+{
+    border: 3px solid white;
+    width: 400px;
+    padding:10px;
+
+}
+#a2{
+    border: 3px solid white;
+    width: 400px;
+    padding:10px;
+
+}
+#a3{
+    border: 3px solid white;
+    width: 400px;
+    padding:10px;
+
+}
+
+#a4{
+    border: 3px solid white;
+    width: 400px;
+    padding:10px;
+
+}
+
+#b1{
+    border: 3px solid white;
+    width: 1000px;
+    padding:1px;
+    margin-left:auto;
+    margin-right: auto;
+    }
+#b2{
+    border: 3px solid white;
+    width: 1000px;
+    padding:1px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+	
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+#myImg{
+	border: 3px solid white;
+	width: 1000px;
+	padding:10px;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius:20px;
+}
+#myImg1{
+	border: 3px solid white;
+	width: 1000px;
+	padding:10px;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius:20px;
+}
+#myImg2{
+	border: 3px solid white;
+	width: 1000px;
+	padding:10px;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius:20px;
+}
+#myImg3{
+	border: 3px solid white;
+	width: 1000px;
+	padding:10px;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius:20px;
+}
+#myImg4{
+	border: 3px solid white;
+	width: 1000px;
+	padding:10px;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius:20px;
+}
+#myImg5{
+	border: 3px solid white;
+	width: 1000px;
+	padding:10px;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius:20px;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background-image: url("bg/i2.jpg");
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+    font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.myskills{
+
+	position: relative;
+    max-width: 200px;
+	
+	color:black;
+	border-radius:12px;
+    margin-left:45%;
+	
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+.button{
+	background-color:white;
+	border:none;
+	color:black;
+	padding:15px 32px;
+	text-align:center;
+	text-decoration:none;
+	display-inline:block;
+	font-size:16px;
+	margin-left:43%;
+	cursor:pointer;
+	border-radius:12px;
+	
+}
+
+    </style>
+    </head>
+    <body>
+        <div id="box1">
+           <center style="margin-top:8%;"> <h1 style="font-size: 50px; " >Jomari Hernandez<hr></h1>
+			<h2 style="font-size: 30px; color:white;">Website / Graphic Designer</h2>
+			<div class="wrapper3">
+				<div class="container-jom">
+				<img src="jomicon/jom.jpg" alt="" class= " profile-img">
+				</div>
+			</div>	
+			
+			<div  class="down">
+				<img src="jomicon/down.png">
+			</div>
+			
+        </div>
+			<div class="myskills">
+				<h1>Skills</h1>
+			</div>	
+		<div class="timeline">
+		  <div class="container left">
+			<div class="content">
+			  <h2>2018</h2>
+			  <p>• Photoshop</p>
+			  <p>Learned how to use photoshop because i want to get my passion in designing and editing pictures
+				 to another level.</p>
+			</div>
+		  </div>
+		  <div class="container right">
+			<div class="content">
+			  <h2>2018</h2>
+			  <p>•	Proficient in using of (Windows 7, 8, & 10 /Linux Ubuntu )</p>
+			  <p>Learned to use other versions of windows because i don't want get
+				 outdated on versions. i tried linux ubuntu because one of my clients wants me to
+				 use it for my server.</p>	
+			</div>
+		  </div>
+		  <div class="container left">
+			<div class="content">
+			  <h2>2017</h2>
+			  <p>• Computer and Network troubleshooting<p>
+			  <p>Learned how to manage and troubleshoot a problem, 
+				 knows how to troubleshoot internet problems and also can build a set of PC.</p>
+			</div>
+		  </div>
+		  <div class="container right">
+			<div class="content">
+				<h2>2016</h2>
+				  <p>• Database design, management and implementation<p>
+				  <p>Learned how to Organize tables, specify the primary keys and refine & normalize design.</p>
+			</div>
+		  </div><br><br><br>
+		  
+		</div>
+			<a href="resume/cvresume.html" class="button">View Resume</a>
+		
+
+    <div class="container-fluid2 bg-grey3">
+		<center><h1 style="font-size: 50px;">My Works</h1><br>
+		<img id="myImg" src="work/amiel.png" alt="Created a logo and business card <br>for a Thesis batch mate" style="width:100%;max-width:300px">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>
+
+		<img id="myImg1" src="work/coke.png" alt="Created a Website e-commerce using photoshop" style="width:100%;max-width:300px">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div><br>
+			
+			
+		<img id="myImg2" src="work/sparts.png" alt="Created my classmate's OJT company a brochure" style="width:100%;max-width:300px">
+			<!-- The Modal -->
+			<div id="myModal" class="modal" >
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>
+		
+			
+		<img id="myImg3" src="work/skills1.png" alt="Some of my Photoshop skills" style="width:100%;max-width:300px">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>	
+			
+			
+		<img id="myImg4" src="work/cityhall.png" alt="Our Thesis Website admin server" style="width:100%;max-width:300px">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div><BR>
+
+		<img id="myImg5" src="work/android.png" alt="Our Android application that is connected to our website" style="width:100%;max-width:300px">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div><br><br>
+				
+			
+				
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+		
+			// Get the modal2
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg1');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+			
+			// Get the modal3
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg2');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+			
+
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg3');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+			
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg4');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+			
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg5');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+			
+		</script>
+	</div>
+
+    </body>
+</html>
